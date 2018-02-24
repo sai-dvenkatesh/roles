@@ -1,0 +1,7 @@
+---
+# install dns 
+ - name: to install dns
+   yum: 
+     name: "{{ package1 }}"
+     state: present
+               

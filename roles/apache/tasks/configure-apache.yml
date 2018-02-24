@@ -1,0 +1,19 @@
+---
+- name: configure apache on ubuntu
+  template:
+       src: virtual.host.conf.j2
+       dest: /etc/apache2/sites-available/virtual.host.conf 
+  notify: restart ubuntu apache
+  when: ansible_os_family == "Debain"
+
+- name: configure apache on redhat
+  template:
+      src: vhosts.conf.j2
+      dest:  /etc/httpd/conf.d/vhosts.conf
+  notify: restart redhat apache
+  when: ansible_os_family == "RedHat"
+
+- name: copy html page
+  copy:
+     src: index.html
+     dest:  /var/www/html

@@ -1,0 +1,4 @@
+---
+# vars file for dns
+   package1: bind
+   process1: named

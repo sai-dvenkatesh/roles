@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+   DocumentRoot /var/www/html
+   ServerName www.{{ ansible_hostname }}
+   ServerAdmin root@{{ domain_name }}
+   ErrorLog logs/www.{{ ansible_hostname }}-error_log
+</VirtualHost>
+

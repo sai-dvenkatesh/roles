@@ -1,0 +1,7 @@
+---
+- name: configure apache
+  hosts: all
+  user: sai
+  sudo: yes
+  roles:
+    - apache

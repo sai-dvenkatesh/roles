@@ -1,0 +1,3 @@
+---
+# handlers file for apache
+- include: trigger-service.yml

@@ -1,0 +1,5 @@
+---
+- name: configure dns
+  hosts: all
+  roles:
+    - dns

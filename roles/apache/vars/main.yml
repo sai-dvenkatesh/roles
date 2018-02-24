@@ -1,0 +1,5 @@
+---
+# vars file for apache
+  ubuntu_apache: apache2
+  redhat_apache: httpd
+  domain_name: wst.com

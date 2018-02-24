@@ -1,0 +1,10 @@
+$TTL 1D
+@	IN SOA	 {{ ansible_hostname }}.wst.com. root.wst.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+				NS      {{ ansible_hostname }}.wst.com.
+{{ ansible_hostname }}.wst.com.  	 A       200.200.0.26
+ansible-controller			A	200.200.0.21

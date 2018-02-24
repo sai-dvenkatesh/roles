@@ -1,0 +1,5 @@
+---
+# tasks file for apache
+- include: installer-apache.yml
+- include: service-apache.yml
+- include: configure-apache.yml

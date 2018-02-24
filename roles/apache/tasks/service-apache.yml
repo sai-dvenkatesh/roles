@@ -1,0 +1,12 @@
+---
+- name: start the services on ubuntu
+  service: 
+      name: "{{ redhat_apache }}"
+      state:  started
+  when: ansible_os_family == "RedHat"
+
+- name: start the services on ubuntu
+  service: 
+      name: "{{ ubuntu_apache }}"
+      state: started
+  when: ansible_os_family == "Debian"

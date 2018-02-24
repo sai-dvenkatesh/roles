@@ -1,0 +1,7 @@
+---
+# run the services
+- name: start bind service named
+  service: 
+      name: "{{ process1 }}"
+      state: started
+      enabled: yes 

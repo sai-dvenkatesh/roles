@@ -1,0 +1,13 @@
+---
+- name: install apache on ubuntu
+  apt:
+   update_cache: yes
+   name: "{{ ubuntu_apache }}"
+   state: present
+  when: ansible_os_family == "Debian"  
+
+- name: install apache on Redhat
+  yum:
+   name: "{{ redhat_apache }}"
+   state: present
+  when: ansible_os_family == "RedHat"

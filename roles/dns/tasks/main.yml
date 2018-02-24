@@ -1,0 +1,5 @@
+---
+# tasks file for dns
+- include: install-bind.yml
+- include: configure-bind.yml
+- include: service-bind.yml

@@ -1,0 +1,12 @@
+---
+- name: restart ubuntu apache
+  service:
+     name: "{{ ubuntu_apache }}"
+     state: restarted
+     enabled: yes
+ 
+- name: restart redhat apache
+  service:
+     name: "{{ redhat_apache }}"
+     state: restarted
+     enabled: yes
